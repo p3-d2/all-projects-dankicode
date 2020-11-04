@@ -8,7 +8,7 @@ const Routes: FC = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" component={Home} />
+        <Route path="/" exact component={Home} />
         <Route path="/one" component={ProjectOne} />
       </Switch>
     </BrowserRouter>
