@@ -1,7 +1,8 @@
 import { FC } from 'react'
+import Routes from './Routes'
 
 const App: FC = () => {
-  return <h1>Pedro</h1>
+  return <Routes />
 }
 
 export default App
