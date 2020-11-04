@@ -27,7 +27,7 @@
   "rules": {
     "prettier/prettier": "error",
     "space-before-function-paren": "off",
-    "react/prop-types": "error",
+    "react/prop-types": "off",
     "react/react-in-jsx-scope": "off"
   }
 }
