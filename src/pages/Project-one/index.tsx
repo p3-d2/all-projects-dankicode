@@ -1,5 +1,7 @@
 import { FC, FormEvent } from 'react'
 
+import GoBack from '../../components/GoBack'
+
 import {
   Container,
   Header,
@@ -24,11 +26,12 @@ const ProjectOne: FC = () => {
   function handleFormSubmit(event: FormEvent) {
     event.preventDefault()
 
-    alert('Parabéns você perderu 10 segundos de vida')
+    alert('Parabéns você perdeu 10 segundos de vida')
   }
 
   return (
     <Container>
+      <GoBack />
       <Header>
         <Logo src={logo} alt="Danki Code" />
       </Header>
