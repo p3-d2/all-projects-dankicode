@@ -1,4 +1,6 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { FiArrowDown, FiHeart } from 'react-icons/fi'
+import { SiCss3, SiHtml5, SiJavascript } from 'react-icons/si'
 import backgroundImage from '../../assets/header_bg.png'
 
 export const Container = styled.div``
@@ -62,6 +64,8 @@ export const Form = styled.form`
 
   border: 12px solid rgba(120, 120, 120, 0.5);
   background-clip: padding-box;
+
+  z-index: 5;
 
   @media (max-width: 400px) {
     width: 100%;
@@ -127,4 +131,153 @@ export const SubmitButton = styled.button`
   &:hover {
     background-color: #323665;
   }
+`
+
+export const Section = styled.section`
+  position: relative;
+
+  width: 100%;
+  padding: 32px;
+
+  background-color: #dddddd;
+  color: #212343;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &.white {
+    background-color: #fff;
+  }
+`
+
+export const SectionContent = styled.div`
+  width: 100%;
+  max-width: 900px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+`
+
+export const SectionTitle = styled.h3`
+  font-size: 28px;
+  font-weight: 800;
+
+  margin: 30px 0;
+`
+
+export const SectionText = styled.p`
+  margin: 0 0 40px;
+  text-align: justify;
+`
+
+export const ArrowDownIconDiv = styled.div`
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+
+  z-index: 10;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+
+  background-color: #212343;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const ArrowDownIcon = styled(FiArrowDown)``
+
+export const CardList = styled.ul`
+  width: 100%;
+
+  margin: 40px 0 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+`
+
+export const CardListItem = styled.li`
+  width: 100%;
+  min-height: 260px;
+
+  padding: 20px;
+
+  text-align: justify;
+  font-size: 12px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+`
+
+const iconCSS = css`
+  width: 84px;
+  margin-bottom: 16px;
+`
+
+export const CardListItemHtmlIcon = styled(SiHtml5)`
+  ${iconCSS}
+`
+
+export const CardListItemContent = styled.p``
+
+export const CardListItemCssIcon = styled(SiCss3)`
+  ${iconCSS}
+`
+
+export const CardListItemJsIcon = styled(SiJavascript)`
+  ${iconCSS}
+`
+
+export const Footer = styled.footer`
+  margin-top: 100px;
+
+  padding: 14px;
+
+  border-top: 2px solid #dddddd;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+export const FooterTitle = styled.h4``
+
+export const FooterSubTitle = styled.h6``
+
+export const HearthIcon = styled(FiHeart)`
+  @keyframes heart {
+    to {
+      transform: translateY(5px);
+    }
+    from {
+      transform: translateY(0px);
+    }
+  }
+
+  animation: 300ms ease-in infinite alternate heart;
+`
+
+export const Strong = styled.a`
+  font-weight: 800;
+
+  margin: 0 8px;
+  cursor: pointer;
 `
