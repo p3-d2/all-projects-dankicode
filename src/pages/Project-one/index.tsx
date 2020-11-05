@@ -6,6 +6,7 @@ import {
   Container,
   Header,
   Logo,
+  LogoImg,
   Banner,
   InfoBox,
   Form,
@@ -50,7 +51,13 @@ const ProjectOne: FC = () => {
     <Container>
       <GoBack />
       <Header>
-        <Logo src={logo} alt="Danki Code" />
+        <Logo
+          href="https://cursos.dankicode.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LogoImg src={logo} alt="Danki Code" />
+        </Logo>
       </Header>
       <Banner>
         <InfoBox>
@@ -141,7 +148,11 @@ const ProjectOne: FC = () => {
         <FooterTitle>Todos os direitos reservados</FooterTitle>
         <FooterSubTitle>
           Feito com <HearthIcon size={20} color="rgb(255, 0, 0)" /> por
-          <Strong href="https://github.com/pedro-frontend" target="_blank">
+          <Strong
+            href="https://github.com/pedro-frontend"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Pedro Henrique
           </Strong>
         </FooterSubTitle>

@@ -14,7 +14,9 @@ export const Header = styled.header`
   align-items: center;
 `
 
-export const Logo = styled.img``
+export const Logo = styled.a``
+
+export const LogoImg = styled.img``
 
 export const Banner = styled.div`
   height: 80vh;
