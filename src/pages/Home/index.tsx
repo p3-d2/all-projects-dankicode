@@ -14,6 +14,11 @@ const Home: FC = () => {
             title="Landing Page"
             description="A primeira landing page feita no curso"
           />
+          <Project
+            to="/facebook-clone"
+            title="Facebook clone"
+            description="Página de login do facebook"
+          />
         </ProjectsContainer>
       </Wrapper>
     </Container>
