@@ -195,11 +195,13 @@ export const SubmitButton = styled.button`
   }
 `
 
-export const Footer = styled.div``
+export const Footer = styled.div`
+  padding: 0 64px;
+`
 
 export const FooterLineOne = styled.div`
   border-bottom: 1px solid #ccc;
-  padding-bottom: 8px;
+  padding: 8px 0;
 `
 
 export const A = styled.a`
