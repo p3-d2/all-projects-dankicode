@@ -3,8 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div``
 
 export const Header = styled.header`
-  height: 80px;
-  padding: 0 64px;
+  padding: 14px 64px;
 
   background: linear-gradient(to bottom, #3b5998, #3b5998);
   color: #fff;
@@ -12,16 +11,28 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
 `
 
 export const Logo = styled.h1`
   font-size: 32px;
   font-weight: 800;
+
+  @media (max-width: 750px) {
+    margin-bottom: 12px;
+  }
 `
 
 export const FormHeader = styled.form`
   display: flex;
   align-items: center;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
 `
 
 export const InputBlock = styled.div`
@@ -29,6 +40,12 @@ export const InputBlock = styled.div`
   flex-direction: column;
 
   margin: 0 8px;
+
+  @media (max-width: 750px) {
+    align-items: center;
+
+    margin: 8px 0;
+  }
 `
 
 export const Label = styled.label`
@@ -48,6 +65,10 @@ export const InputHeader = styled.input`
 
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0.6);
+
+  @media (max-width: 750px) {
+    width: 256px;
+  }
 `
 
 export const SubmitButtonHeader = styled.button`
@@ -67,6 +88,11 @@ export const SubmitButtonHeader = styled.button`
 
   &:hover {
     background-color: #1f4ba6;
+  }
+
+  @media (max-width: 750px) {
+    padding: 4px 16px;
+    margin-top: -12px;
   }
 `
 
