@@ -1,6 +1,6 @@
 import { FC } from 'react'
-import { FiArrowLeft } from 'react-icons/fi'
 import { useHistory } from 'react-router-dom'
+import { FiArrowLeft } from '../../styles/icons'
 
 import { Container, Button, Title } from './styles'
 
@@ -16,7 +16,7 @@ const GoBack: FC = () => {
       <Button onClick={backHome}>
         <FiArrowLeft size={26} color="#fff" />
       </Button>
-      <Title>Voltar para todos os projetos</Title>
+      <Title>Todos os projetos</Title>
     </Container>
   )
 }
