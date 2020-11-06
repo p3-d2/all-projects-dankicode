@@ -40,7 +40,7 @@ export const Label = styled.label`
   }
 `
 
-export const Input = styled.input`
+export const InputHeader = styled.input`
   height: 28px;
   width: 156px;
 
@@ -105,7 +105,92 @@ export const Title = styled.h2`
 
 export const SubTitle = styled.h3`
   font-size: 24px;
-  margin-top: -8px;
+  margin: -8px 0 20px;
 `
 
-export const Form = styled.form``
+export const Form = styled.form`
+  select + select {
+    margin-left: 8px;
+  }
+`
+
+export const InputLine = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 8px;
+`
+
+export const Input = styled.input`
+  width: 100%;
+  height: 40px;
+
+  padding: 0 8px;
+  margin: 4px 0;
+
+  border-radius: 4px;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+`
+
+export const Legend = styled.legend`
+  color: #90949c;
+
+  margin: 24px 0 10px;
+`
+
+export const Select = styled.select`
+  height: 40px;
+
+  font-size: 16px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+`
+
+export const Option = styled.option``
+
+export const RadiosWrapper = styled.div`
+  display: flex;
+  align-items: center;
+
+  div + div {
+    margin-left: 12px;
+  }
+`
+
+export const RadioInputDiv = styled.div`
+  display: flex;
+  align-items: center;
+
+  label {
+    font-size: 16px;
+  }
+`
+
+export const RadioInput = styled.input`
+  transform: scale(1.2) translateY(-2px);
+  margin-right: 6px;
+`
+
+export const SubmitButton = styled.button`
+  background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  color: #fff;
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+
+  padding: 10px;
+  margin: 20px 0;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  transition: 300ms background-color;
+
+  &:hover {
+    background-color: #67ae55;
+    background: linear-gradient(#81d66c, #75b85b);
+  }
+`
