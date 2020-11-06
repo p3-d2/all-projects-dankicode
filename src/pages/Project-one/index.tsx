@@ -147,7 +147,7 @@ const ProjectOne: FC = () => {
       <Footer>
         <FooterTitle>Todos os direitos reservados</FooterTitle>
         <FooterSubTitle>
-          Feito com <HearthIcon size={20} color="rgb(255, 0, 0)" /> por
+          Feito com <HearthIcon size={20} color="#ff0000" /> por
           <Strong
             href="https://github.com/pedro-frontend"
             target="_blank"

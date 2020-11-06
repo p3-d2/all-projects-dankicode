@@ -1,7 +1,12 @@
 import styled, { css } from 'styled-components'
-import { FiArrowDown, FiHeart } from 'react-icons/fi'
-import { SiCss3, SiHtml5, SiJavascript } from 'react-icons/si'
 import backgroundImage from '../../assets/header_bg.png'
+import {
+  FiArrowDown,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  FiHeart
+} from '../../styles/icons'
 
 export const Container = styled.div``
 
@@ -12,6 +17,10 @@ export const Header = styled.header`
 
   display: flex;
   align-items: center;
+
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
 `
 
 export const Logo = styled.a``
@@ -19,23 +28,36 @@ export const Logo = styled.a``
 export const LogoImg = styled.img``
 
 export const Banner = styled.div`
-  height: 80vh;
+  height: max(80vh, 510px);
   padding: 48px;
   background-image: url(${backgroundImage});
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 900px) {
+    height: calc(
+      max(85vh, 535px) + 250px + 20px + 48px
+    ); /* Form height + InfoBox height + InfoBox margin-bottom + Banner padding */
+    flex-direction: column;
+    justify-content: center;
+  }
 `
 
 export const InfoBox = styled.div`
   height: 250px;
-  width: 500px;
+  width: min(500px, 40%);
+  min-width: 400px;
 
   background-color: rgba(33, 35, 67, 0.7);
   color: #fff;
 
-  @media (max-width: 500px) {
+  @media (max-width: 900px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 400px) {
     width: 100%;
   }
 `
@@ -59,7 +81,7 @@ export const InfoBoxListItem = styled.li``
 
 export const Form = styled.form`
   width: 400px;
-  height: 85vh;
+  height: max(85vh, 535px);
   padding: 16px;
 
   background-color: #fff;
@@ -205,7 +227,11 @@ export const CardList = styled.ul`
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 24px;
+  grid-gap: 24px;
+
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 export const CardListItem = styled.li`
