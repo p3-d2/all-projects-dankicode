@@ -103,6 +103,10 @@ export const Main = styled.main`
   padding: 24px 64px 0;
 
   background: linear-gradient(to bottom, #fff, #d3d8e8);
+
+  @media (max-width: 750px) {
+    padding: 24px 12px 0;
+  }
 `
 
 export const MapSection = styled.section`
@@ -110,6 +114,10 @@ export const MapSection = styled.section`
   height: 100%;
 
   margin-right: 16px;
+
+  @media (max-width: 1030px) {
+    display: none;
+  }
 `
 
 export const Description = styled.h4``
