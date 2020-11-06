@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import backgroundImage from '../../assets/header_bg.png'
+import backgroundImage from '../../assets/projectOne/header_bg.png'
 import {
   FiArrowDown,
   SiHtml5,

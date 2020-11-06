@@ -38,7 +38,7 @@ import {
   Strong
 } from './styles'
 
-import logo from '../../assets/logo.png'
+import logo from '../../assets/projectOne/logo.png'
 
 const ProjectOne: FC = () => {
   function handleFormSubmit(event: FormEvent) {
