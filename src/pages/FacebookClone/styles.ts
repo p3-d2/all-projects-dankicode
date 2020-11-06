@@ -181,7 +181,7 @@ export const SubmitButton = styled.button`
   border-radius: 5px;
 
   padding: 10px;
-  margin: 20px 0;
+  margin: 20px 0 40px;
 
   font-size: 18px;
 
@@ -193,4 +193,23 @@ export const SubmitButton = styled.button`
     background-color: #67ae55;
     background: linear-gradient(#81d66c, #75b85b);
   }
+`
+
+export const Footer = styled.div``
+
+export const FooterLineOne = styled.div`
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+`
+
+export const A = styled.a`
+  pointer-events: none;
+  color: #385898;
+  font-size: 14px;
+
+  margin: 0 12px;
+`
+
+export const FooterLine = styled.div`
+  margin: 4px 0;
 `

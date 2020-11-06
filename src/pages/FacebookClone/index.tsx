@@ -26,7 +26,11 @@ import {
   RadiosWrapper,
   RadioInputDiv,
   RadioInput,
-  SubmitButton
+  SubmitButton,
+  Footer,
+  FooterLineOne,
+  A,
+  FooterLine
 } from './styles'
 
 import mapImg from '../../assets/facebookClone/mapImg.png'
@@ -145,6 +149,21 @@ const FacebookClone: FC = () => {
           </Form>
         </FormSection>
       </Main>
+
+      <Footer>
+        <FooterLineOne>
+          <A href="https://github.com/pedro-frontend">Português (Brasil)</A>
+          <A href="https://github.com/pedro-frontend">Português (Brasil)</A>
+          <A href="https://github.com/pedro-frontend">Português (Brasil)</A>
+          <A href="https://github.com/pedro-frontend">Português (Brasil)</A>
+          <A href="https://github.com/pedro-frontend">Português (Brasil)</A>
+        </FooterLineOne>
+        <FooterLine>
+          <A href="https://github.com/pedro-frontend">Cadastre-se</A>
+          <A href="https://github.com/pedro-frontend">Entrar</A>
+          <A href="https://github.com/pedro-frontend">Messenger</A>
+        </FooterLine>
+      </Footer>
     </Container>
   )
 }
