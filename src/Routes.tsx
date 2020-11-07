@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Home from './pages/Home'
-import ProjectOne from './pages/ProjectOne'
+import DankiCodeLanding from './pages/DankiCodeLanding'
 import FacebookClone from './pages/FacebookClone'
 
 const Routes: FC = () => {
@@ -10,7 +10,7 @@ const Routes: FC = () => {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/one" component={ProjectOne} />
+        <Route path="/dankicode-landing" component={DankiCodeLanding} />
         <Route path="/facebook-clone" component={FacebookClone} />
       </Switch>
     </BrowserRouter>

@@ -38,9 +38,9 @@ import {
   Strong
 } from './styles'
 
-import logo from '../../assets/projectOne/logo.png'
+import logo from '../../assets/dankicodelanding/logo.png'
 
-const ProjectOne: FC = () => {
+const DankiCodeLanding: FC = () => {
   function handleFormSubmit(event: FormEvent) {
     event.preventDefault()
 
@@ -161,4 +161,4 @@ const ProjectOne: FC = () => {
   )
 }
 
-export default ProjectOne
+export default DankiCodeLanding

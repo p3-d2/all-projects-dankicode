@@ -10,8 +10,8 @@ const Home: FC = () => {
         <Title>Projetos</Title>
         <ProjectsContainer>
           <Project
-            to="/one"
-            title="Landing Page"
+            to="/dankicode-landing"
+            title="DankiCode Landing"
             description="A primeira landing page feita no curso"
           />
           <Project
