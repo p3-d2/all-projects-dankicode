@@ -11,13 +11,18 @@ const Home: FC = () => {
         <ProjectsContainer>
           <Project
             to="/dankicode-landing"
-            title="DankiCode Landing"
-            description="A primeira landing page feita no curso"
+            title="DankiCode landing"
+            description="Landing page da danki code"
           />
           <Project
             to="/facebook-clone"
             title="Facebook clone"
             description="Página de login do facebook"
+          />
+          <Project
+            to="/cenas-landing"
+            title="Cenas landing"
+            description="Landing page para imobiliárias"
           />
         </ProjectsContainer>
       </Wrapper>
