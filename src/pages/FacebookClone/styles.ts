@@ -3,10 +3,19 @@ import styled from 'styled-components'
 export const Container = styled.div``
 
 export const Header = styled.header`
-  padding: 14px 64px;
+  padding: 12px 0;
 
   background: linear-gradient(to bottom, #3b5998, #3b5998);
   color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const HeaderWrapper = styled.div`
+  width: 100%;
+  max-width: 1100px;
 
   display: flex;
   align-items: center;
@@ -97,12 +106,21 @@ export const SubmitButtonHeader = styled.button`
 `
 
 export const Main = styled.main`
+  background: linear-gradient(to bottom, #fff, #d3d8e8);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const MainWrapper = styled.div`
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 24px 0 0;
+
   display: flex;
   align-items: flex-start;
-
-  padding: 24px 64px 0;
-
-  background: linear-gradient(to bottom, #fff, #d3d8e8);
 
   @media (max-width: 750px) {
     padding: 24px 12px 0;
