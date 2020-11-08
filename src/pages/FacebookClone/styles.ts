@@ -231,21 +231,43 @@ export const SubmitButton = styled.button`
 
 export const Footer = styled.div`
   padding: 0 64px;
+
+  @media (max-width: 550px) {
+    padding: 0 12px;
+  }
 `
 
 export const FooterLineOne = styled.div`
   border-bottom: 1px solid #ccc;
   padding: 8px 0;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 8px;
+
+  @media (max-width: 1050px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 550px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `
 
 export const A = styled.a`
   pointer-events: none;
   color: #385898;
   font-size: 14px;
-
-  margin: 0 12px;
 `
 
 export const FooterLine = styled.div`
-  margin: 4px 0;
+  margin: 8px 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+
+  @media (max-width: 550px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
