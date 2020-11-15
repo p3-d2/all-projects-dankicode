@@ -43,6 +43,10 @@ export const Banner = styled.div`
     flex-direction: column;
     justify-content: center;
   }
+
+  @media (max-width: 400px) {
+    padding: 0;
+  }
 `
 
 export const InfoBox = styled.div`
@@ -59,6 +63,7 @@ export const InfoBox = styled.div`
 
   @media (max-width: 400px) {
     width: 100%;
+    min-width: 0;
   }
 `
 
