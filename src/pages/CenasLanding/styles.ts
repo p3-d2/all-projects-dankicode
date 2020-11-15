@@ -19,7 +19,24 @@ export const Wrapper = styled.div`
 
 export const Header = styled.header`
   grid-area: header;
-  background-color: red;
+  background-color: #dcdcdc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const HeaderWrapper = styled.div`
+  width: 100%;
+  max-width: 1100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
+
+export const Logo = styled.img`
+  height: 45px;
 `
 
 export const Main = styled.main`
