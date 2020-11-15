@@ -9,11 +9,6 @@ export const Container = styled.div`
   justify-content: center;
 
   overflow-x: hidden;
-
-  @media (max-width: 550px) {
-    height: 100%;
-    width: 100%;
-  }
 `
 
 export const Wrapper = styled.main`
