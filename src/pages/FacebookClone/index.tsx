@@ -35,7 +35,7 @@ import {
   FooterLine
 } from './styles'
 
-import mapImg from '../../assets/facebookClone/mapImg.png'
+import mapImg from '../../assets/facebookClone/mapImg.webp'
 
 const FacebookClone: FC = () => {
   function handleSubmitForm(event: FormEvent) {

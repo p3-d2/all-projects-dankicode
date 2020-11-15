@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import backgroundImage from '../../assets/dankicodelanding/header_bg.png'
+import backgroundImage from '../../assets/dankicodelanding/header_bg.webp'
 import {
   FiArrowDown,
   SiHtml5,

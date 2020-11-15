@@ -38,7 +38,7 @@ import {
   Strong
 } from './styles'
 
-import logo from '../../assets/dankicodelanding/logo.png'
+import logo from '../../assets/dankicodelanding/logo.webp'
 
 const DankiCodeLanding: FC = () => {
   function handleFormSubmit(event: FormEvent) {
